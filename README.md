@@ -93,17 +93,3 @@ Outputs:
 > - Reshaped 28+ PCA-derived transaction features into timestep sequences and trained a 2-layer LSTM (64→32 units) with Batch Normalization and Dropout (0.3) to mitigate overfitting on the SMOTE-balanced training set.
 > - Tuned SMOTE resampling ratio, batch size, and learning rate via ReduceLROnPlateau scheduling, achieving Precision of 0.9X and Recall of 0.9X on held-out imbalanced test data.
 > - Benchmarked ANN vs. RNN architectures on Precision, Recall, F1, and ROC-AUC, informing model selection trade-offs for real-time fraud scoring.
-
-> ⚠️ **Important:** the reported ANN metrics (Precision 0.92 / Recall 0.89) reflect an example
-> run — plug in your own numbers after training on the real Kaggle dataset. Don't put
-> metrics on a resume you haven't actually reproduced with your own trained model.
-
-## Notes / next steps
-
-- Real deployments typically add engineered features beyond the anonymized PCA
-  components (e.g., time-since-last-transaction, merchant category, geo-velocity).
-- For a true sequential RNN benefit, gather each card's ordered transaction history
-  and feed genuine per-card sequences instead of the feature-reshape approach used here.
-- Consider a threshold-tuning step (moving the 0.5 cutoff) since fraud detection
-  usually cares more about recall (catching fraud) balanced against acceptable
-  false-positive rate for customers.
