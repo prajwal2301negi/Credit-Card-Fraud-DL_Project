@@ -78,7 +78,7 @@ Outputs:
   Accuracy — precision/recall matter far more than accuracy here since >99.8%
   accuracy is trivially achievable by predicting "no fraud" for everything.
 
-## Resume bullets
+## Neural Networks
 
 **ANN (as provided):**
 > Credit Card Fraud Detection — Artificial Neural Network | Python, TensorFlow, Pandas, NumPy
