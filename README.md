@@ -7,11 +7,6 @@ two complementary architectures:
 - **RNN** — a stacked LSTM network that treats each transaction's feature vector
   as a short sequence, learning cross-feature interaction patterns an ANN can miss.
 
-Built to work with the classic [Kaggle Credit Card Fraud Detection dataset](https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud)
-(284,807 transactions, 492 fraud cases, 0.17% fraud rate, 28 anonymized PCA
-features + `Time` + `Amount`). A synthetic data generator with the same shape
-and class imbalance is included so the whole pipeline runs even without the
-real file.
 
 ## Project structure
 
