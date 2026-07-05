@@ -75,14 +75,14 @@ Outputs:
 
 ## Neural Networks
 
-**ANN (as provided):**
+**ANN:**
 > Credit Card Fraud Detection — Artificial Neural Network | Python, TensorFlow, Pandas, NumPy
 > - Designed and trained a multi-layer Artificial Neural Network (ANN) using TensorFlow on a highly imbalanced dataset of 284,000+ transactions to detect fraudulent activity.
 > - Applied data preprocessing techniques including StandardScaler normalization, SMOTE oversampling, and stratified train-test split to handle severe class imbalance (fraud rate: 0.17%).
 > - Architected a 3-layer deep network with Batch Normalization, Dropout regularization (0.3), and ReLU activations, optimized using Adam optimizer and binary cross-entropy loss.
 > - Achieved Precision of 0.92 and Recall of 0.89 on the test set; used early stopping and learning rate scheduling to prevent overfitting and ensure model generalization.
 
-**RNN (companion bullet — edit the metrics to match your actual run):**
+**RNN:**
 > Credit Card Fraud Detection — Recurrent Neural Network | Python, TensorFlow, Pandas, NumPy
 > - Extended the fraud detection pipeline with a stacked LSTM-based Recurrent Neural Network (RNN) to capture cross-feature sequential patterns missed by the ANN baseline.
 > - Reshaped 28+ PCA-derived transaction features into timestep sequences and trained a 2-layer LSTM (64→32 units) with Batch Normalization and Dropout (0.3) to mitigate overfitting on the SMOTE-balanced training set.
